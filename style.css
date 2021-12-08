@@ -12,13 +12,11 @@ html {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Popins', sans-serif;
   font-weight: 400;
   height: 100vh;
-  color: #333;
-  background-color: #8EC5FC;
-  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-  
+  color: hsl(14, 100%, 77%);
+  background-color: #ffe9df;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,10 +27,17 @@ main {
   position: relative;
   width: 100rem;
   height: 60rem;
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.452);
   backdrop-filter: blur(200px);
   filter: blur();
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  box-shadow:
+  0px 0px 17.2px rgba(0, 0, 0, 0.022),
+  0px 0px 43.4px rgba(0, 0, 0, 0.031),
+  0px 0px 88.6px rgba(0, 0, 0, 0.039),
+  0px 0px 182.5px rgba(0, 0, 0, 0.048),
+  0px 0px 500px rgba(0, 0, 0, 0.07)
+;
+
   border-radius:25px;
   overflow: hidden;
   display: flex;
@@ -61,12 +66,12 @@ main {
 .score {
   font-size: 8rem;
   font-weight: 300;
-  color: #c7365f;
+  color: hsl(14, 100%, 77%);
   margin-bottom: auto;
 }
 
 .player--active {
-  background-color: rgba(178, 97, 245, 0.301);
+  background-color: #FFD8CC;
 }
 .player--active .name {
   font-weight: 700;
@@ -80,10 +85,10 @@ main {
 }
 
 .current {
-  background-color: #fc8aab;
+  background-color: #ffccbd;
   opacity: 0.8;
   border-radius: 20px;
-  color: #fff;
+  color: #0A1D37;
   width: 65%;
   padding: 2rem;
   text-align: center;
@@ -94,7 +99,7 @@ main {
   text-transform: uppercase;
   margin-bottom: 1rem;
   font-size: 1.7rem;
-  color: #ddd;
+  color: #0A1D37;
 }
 
 .current-score {
@@ -106,7 +111,7 @@ main {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  color: #444;
+  color: #0A1D37;
   background: none;
   border: none;
   font-family: inherit;
@@ -116,13 +121,18 @@ main {
   font-weight: 400;
   transition: all 0.2s;
 
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #FFD8CC;
   backdrop-filter: blur(10px);
 
   padding: 0.7rem 2.5rem;
   border-radius: 50rem;
-  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  box-shadow:
+  0px 0px 17.2px rgba(0, 0, 0, 0.022),
+  0px 0px 43.4px rgba(0, 0, 0, 0.031),
+  0px 0px 88.6px rgba(0, 0, 0, 0.039),
+  0px 0px 182.5px rgba(0, 0, 0, 0.048),
+  0px 0px 500px rgba(0, 0, 0, 0.07)
+;
 }
 
 .btn::first-letter {
@@ -143,7 +153,13 @@ main {
 
 .btn:active {
   transform: translate(-50%, 3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow:
+  0px 0px 17.2px rgba(0, 0, 0, 0.022),
+  0px 0px 43.4px rgba(0, 0, 0, 0.031),
+  0px 0px 88.6px rgba(0, 0, 0, 0.039),
+  0px 0px 182.5px rgba(0, 0, 0, 0.048),
+  0px 0px 500px rgba(0, 0, 0, 0.07)
+;
 }
 
 .btn:focus {
@@ -161,12 +177,12 @@ main {
 }
 
 .player--winner {
-  background-color: #2f2f2f;
+  background-color: #0A1D37;
 }
 
 .player--winner .name {
   font-weight: 700;
-  color: #c7365f;
+  color: hsl(14, 100%, 77%);
 }
 
 .hidden{
