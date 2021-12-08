@@ -15,8 +15,8 @@ body {
   font-family: 'Popins', sans-serif;
   font-weight: 400;
   height: 100vh;
-  color: hsl(14, 100%, 77%);
-  background-color: #ffe9df;
+  color: #4C34FF;
+  background-color: #f1ecff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@ main {
   position: relative;
   width: 100rem;
   height: 60rem;
-  background-color: rgba(255, 255, 255, 0.452);
+  background-color: #d8ccff36;
   backdrop-filter: blur(200px);
   filter: blur();
   box-shadow:
@@ -66,12 +66,12 @@ main {
 .score {
   font-size: 8rem;
   font-weight: 300;
-  color: hsl(14, 100%, 77%);
+  color:#4C34FF;
   margin-bottom: auto;
 }
 
 .player--active {
-  background-color: #FFD8CC;
+  background-color: #ffffff;
 }
 .player--active .name {
   font-weight: 700;
@@ -85,10 +85,10 @@ main {
 }
 
 .current {
-  background-color: #ffccbd;
+  background-color: #D8CCFF;
   opacity: 0.8;
   border-radius: 20px;
-  color: #0A1D37;
+  color: #4C34FF;
   width: 65%;
   padding: 2rem;
   text-align: center;
@@ -99,7 +99,7 @@ main {
   text-transform: uppercase;
   margin-bottom: 1rem;
   font-size: 1.7rem;
-  color: #0A1D37;
+  color: #4C34FF;
 }
 
 .current-score {
@@ -111,28 +111,21 @@ main {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  color: #0A1D37;
+  color: #4C34FF;
   background: none;
   border: none;
   font-family: inherit;
   font-size: 1.8rem;
   text-transform: uppercase;
   cursor: pointer;
-  font-weight: 400;
+  font-weight: 600;
   transition: all 0.2s;
 
-  background-color: #FFD8CC;
+  background-color: #D8CCFF;
   backdrop-filter: blur(10px);
 
   padding: 0.7rem 2.5rem;
   border-radius: 50rem;
-  box-shadow:
-  0px 0px 17.2px rgba(0, 0, 0, 0.022),
-  0px 0px 43.4px rgba(0, 0, 0, 0.031),
-  0px 0px 88.6px rgba(0, 0, 0, 0.039),
-  0px 0px 182.5px rgba(0, 0, 0, 0.048),
-  0px 0px 500px rgba(0, 0, 0, 0.07)
-;
 }
 
 .btn::first-letter {
@@ -182,7 +175,11 @@ main {
 
 .player--winner .name {
   font-weight: 700;
-  color: hsl(14, 100%, 77%);
+  color: #D8CCFF;
+}
+.player--winner .score {
+  font-weight: 700;
+  color: #D8CCFF;
 }
 
 .hidden{
